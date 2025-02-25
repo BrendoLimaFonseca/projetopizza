@@ -1,0 +1,311 @@
+ html ,body{
+height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container{
+  max-height: 2vh;
+  
+}
+.img1{
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+.titulo{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+h3{
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.p1{
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.preco{
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.cards {
+    position: relative;
+   top: -500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.cards1 {
+    width: 280px;
+    height: 250px;
+    border-radius: 16px;
+    border-width: 2px;
+    background-color: #FFF5DE;
+    position: relative;
+    top: 3rem;
+    margin: 10px;
+}
+.pizza{
+    position: relative;
+   left: 29%;
+   top: -10vh;
+}
+/* From Uiverse.io by catraco */ 
+.heart-container {
+    --heart-color: rgb(255, 91, 137);
+    position: relative;
+    width: 30px;
+    height: 50px;
+    transition: .3s;
+    left: 85%;
+    top: -20vh;
+  }
+  
+  .heart-container .checkbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+  }
+  
+  .heart-container .svg-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heart-container .svg-outline,
+          .heart-container .svg-filled {
+    fill: var(--heart-color);
+    position: absolute;
+  }
+  
+  .heart-container .svg-filled {
+    animation: keyframes-svg-filled 1s;
+    display: none;
+  }
+  
+  .heart-container .svg-celebrate {
+    position: absolute;
+    animation: keyframes-svg-celebrate .5s;
+    animation-fill-mode: forwards;
+    display: none;
+    stroke: var(--heart-color);
+    fill: var(--heart-color);
+    stroke-width: 2px;
+  }
+  
+  .heart-container .checkbox:checked~.svg-container .svg-filled {
+    display: block
+  }
+  
+  .heart-container .checkbox:checked~.svg-container .svg-celebrate {
+    display: block
+  }
+  
+  @keyframes keyframes-svg-filled {
+    0% {
+      transform: scale(0);
+    }
+  
+    25% {
+      transform: scale(1.2);
+    }
+  
+    50% {
+      transform: scale(1);
+      filter: brightness(1.5);
+    }
+  }
+  
+  @keyframes keyframes-svg-celebrate {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 1;
+      filter: brightness(1.5);
+    }
+  
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+      display: none;
+    }
+  }
+  .descricao{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    top: -20vh;
+  }
+  .botao{
+    width: 206px;
+height: 41px;
+gap: 10px;
+padding-top: 12px;
+padding-right: 40px;
+padding-bottom: 12px;
+padding-left: 40px;
+border-radius: 25px;
+background-color: #FFBD48;
+border: none;
+font-size: 15px;
+font-family: "Inter", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      transition: .4s;
+      cursor: pointer;
+
+    }
+    .botao:hover{
+      background-color: #ac7d2d;
+      color: #fff;
+    }
+    .final{
+      position: relative;
+     top: -300px;
+      
+    }
+    .paisagem{
+      position: relative;
+      left: 10%;
+     
+    }
+    .textos{
+      position: relative;
+      left: 50%;
+      top: -400px;
+     
+      
+     
+    }
+    .h1{
+      font-size: 36px;
+      font-family: "Inter", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+    .p{
+      font-size: 20px;
+      font-family: "Inter", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+    .textos, .final, .container {
+    
+      margin:  0;
+  }
+  .amarelo {
+    color: yellow;
+}
+
+.vermelho {
+    color: red;
+}
+
+.verde {
+    color: green;
+}
+@media screen and (max-width: 480px) {
+  .container {
+      max-height: none;
+  }
+
+  .img1 {
+      width: 100%;
+      height: 20vh;
+  }
+  #img1{
+    height: 40vh;
+  }
+
+  .cards {
+      top: -300px;
+      padding: 20px;
+
+  }
+
+  .cards-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .cards1 {
+      width: 330px;
+      height: auto;
+      padding-top: 50px;
+      height: 47vh;
+  }
+
+  .pizza {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -8vh;
+      width: 60%;
+  }
+
+  .descricao {
+      top: -10vh;
+  }
+
+  .heart-container {
+      left: 85%;
+      top: -10vh;
+  }
+
+  .final {
+      top: -150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .paisagem {
+      width: 90%;
+      left: 0;
+  }
+
+  .textos {
+      left: 0;
+      top: 0;
+      padding: 20px;
+  }
+
+  .botao {
+      width: 230px;
+      top: 20px;
+      position: relative;
+  }
+}
