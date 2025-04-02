@@ -67,6 +67,18 @@ h3{
     top: 3rem;
     margin: 10px;
 }
+@keyframes rotatePizza {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pizza {
+  animation: rotatePizza 15s linear infinite;
+}
 .pizza{
     position: relative;
    left: 29%;
