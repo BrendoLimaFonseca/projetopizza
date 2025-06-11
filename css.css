@@ -278,12 +278,13 @@ font-family: "Inter", serif;
       height: auto;
       padding-top: 50px;
       height: 47vh;
+      margin-bottom: 10vh;
   }
 
   .pizza {
-      left: 50%;
+      left: 22%;
       transform: translateX(-50%);
-      top: -8vh;
+      top: -13vh;
       width: 60%;
   }
 
